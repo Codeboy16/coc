@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Clash of Clans</title>
+</head>
+<body>
+   <!-- Navbar -->
+   <div class="bg-[black] flex justify-between md:justify-evenly text-white py-2 px-3">
+     <img src="logo.png" class="w-[50px] h-[50px]">
+     <div class="flex hidden md:inline-flex" id="menu">
+        <p class="m-3 hover:border-b-4 hover:border-[red] cursor-pointer text-center">HOME</p>
+        <p class="m-3 hover:border-b-4 hover:border-[red] cursor-pointer text-center">GAMES</p>
+        <p class="m-3 hover:border-b-4 hover:border-[red] cursor-pointer ">CARRERS</p>
+        <p class="m-3 hover:border-b-4 hover:border-[red] cursor-pointer ">SUPPORT</p>
+     </div>
+     <div class="py-2 md:hidden" id="hamburger">
+      <i class="ri-menu-3-line"></i>
+     </div>
+     <div class="p-3 hidden md:inline-block" id="search_section">
+        <input type="search" placeholder="Search.." id="search">
+        <i class="ri-search-line" id="search_btn"></i>
+     </div>
+     <div class="hidden " id="cancel">
+      <i class="ri-close-line"></i>
+     </div>
+   </div>
+   <!-- Menu Bar -->
+      <div class="relative">
+      <img src="background.png" class="img-fluid">
+      <img src="coc_name.png" id="coc_name">         
+      </div>
+   <!-- Phone Section -->
+   <div class="py-2 md:py-5 flex justify-center flex-wrap">
+      <div class="mx-5">
+       <img src="phone.png" class="img-fluid w-[500px]">        
+      </div>
+      <div class="flex flex-col justify-items-center py-4 px-3">
+         <h2 class="font-bold text-center md:text-left">LEAD YOUR CLAN TO VICTORY!</h2>
+         <p>Answer the call of the mustache! Join the international fray that is Clash of Clans.</p>
+         <p>Customize your village, build an army and crush your opponents. Like using friendship to strike fear into your enemies?</p> 
+         <p>Join a Clan, or establish a Clashing legacy by creating your own.</p> 
+         <p>The choice is yours in this millions-strong community of Barbarians. Download for free and Clash on, Chief!</p>
+         <div class="flex w-[100px] md:w-[150px]">
+            <img src="applestore.png" class="px-2 py-3">
+            <img src="googleplay.png" class="px-2 py-3">
+            <img src="amazonpay.png" class="px-2 py-3">
+         </div>
+      </div>
+   </div>
+   <!-- 2nd Phone -->
+   <div class="relative py-3" id="phone_two">
+      <img src="bg.webp" class=" img-fluid">
+      <img src="phone2.png" class=" w-[100%] h-[300px] md:w-[45em] md:h-[400px] absolute top-[25%] md:left-[50%] hidden 2xl:inline-flex">
+   </div>
+   <!-- clans -->
+   <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="giant.png" class="d-block w-100 md:h-[800px] img-fluid " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="minion.png" class="d-block w-100 md:h-[800px] img-fluid " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="great_giant.png" class="d-block w-100 md:h-[800px] img-fluid " alt="...">
+        </div>
+        <div class="carousel-item">
+         <img src="coc_troop_1.avif" class="d-block w-100 md:h-[800px] img-fluid " alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="troop_2.jpg" class="d-block w-100 md:h-[800px] img-fluid " alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="troop_3.jpg" class="d-block w-100 md:h-[800px] img-fluid " alt="...">
+       </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>            
+   <!-- Pekka part -->
+    <div class="flex justify-evenly mt-3 text-white" id="pekka">
+       <div class="h-[100px] py-5 px-3 ">
+         <h1 class="text-2xl">INTRESTED IN WORKING WITH US?</h1>
+         <button class="btn btn-light mx-auto my-2">SEE ALL POSITIONS</button>
+       </div>
+       <div class="h-[200px]">
+         <img src="pekka.png" class="h-[200px]">
+       </div>
+    </div>  
+     <!-- Footer -->
+    <div class="container-fluid bg-[black] text-white h-[300px] md:h-[200px]">
+       <div class="row">
+         <div class="col-10 mx-5 ">
+          <div class="flex justify-between">
+             <div class="py-2">
+              <p class="text-2xl">Follow us on</p>      
+               <i class="ri-youtube-fill text-3xl"></i>
+               <i class="ri-facebook-box-fill text-3xl"></i>
+               <i class="ri-instagram-fill text-3xl"></i>
+               <i class="ri-twitter-fill text-3xl"></i>
+               <i class="ri-linkedin-box-fill text-3xl"></i>
+             </div>
+             <div class="flex w-[60px] md:w-[150px] hidden lg:inline-flex">
+               <img src="googleplay.png" class="px-2 py-3">
+               <img src="applestore.png" class="px-2 py-3">
+             </div>
+           </div><hr>
+            <div class="flex py-2 flex-wrap">
+               <p class="px-2">Terms Of Service</p>
+               <p class="px-2">Privacy Policy</p>
+               <p class="px-2">Parent's Guide</p>
+               <p class="px-2">Safe and Fair Play Policy</p>
+               <p class="px-2">Other LegalDocs</p>
+               <p class="px-2">For Media</p>
+               <p class="px-2">Manage Cookies</p>
+            </div>
+
+         </div>
+       </div>
+    </div>
+    <!-- JavaScript Code -->
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
